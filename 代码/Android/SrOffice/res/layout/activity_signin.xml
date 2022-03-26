@@ -1,0 +1,310 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sroffice.SigninActivity" 
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/userType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:weightSum="2" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLSignInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userType"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LLUserName"
+            android:layout_width="fill_parent"
+            android:layout_height="26dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:text="用户名*" />
+
+            <EditText
+	        android:id="@+id/ETUserName"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:textColor="#000000"
+	        android:background="@layout/shape_edit"
+	        android:ems="10" />
+        </LinearLayout>
+        
+       <LinearLayout
+            android:id="@+id/LLUserPsd"
+            android:layout_width="fill_parent"
+            android:layout_height="26dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/LLUserName"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:text="设置密码*" />
+
+            <EditText
+	        android:id="@+id/ETUserPsd"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:inputType="textPassword"
+	        android:textColor="#000000"
+	        android:background="@layout/shape_edit"
+	        android:ems="10" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LLConformPsd"
+            android:layout_width="fill_parent"
+            android:layout_height="26dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/LLUserPsd"
+            
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:text="确认密码*" />
+
+            <EditText
+	        android:id="@+id/ETConformPsd"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:inputType="textPassword"
+	        android:textColor="#000000"
+	        android:background="@layout/shape_edit"
+	        android:ems="10" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout style="@style/common_horizontal_division_line_style"
+        android:id="@+id/LLSeparetor" 
+        android:layout_below="@id/LLSignInfo"
+        android:layout_marginTop="5dp"/>
+    
+    <TextView
+        android:id="@+id/TVCompanyInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#ff0000"
+        android:layout_below="@id/LLSeparetor"
+        android:text="公司信息（*为必填）" />
+    
+    <LinearLayout
+        android:id="@+id/LLCompanyInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVCompanyInfo"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+        
+        <LinearLayout
+            android:id="@+id/LLCompanyName"
+            android:layout_width="fill_parent"
+            android:layout_height="26dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:text="公司名称*" />
+
+            <EditText
+	        android:id="@+id/ETCompanyName"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:textColor="#000000"
+	        android:background="@layout/shape_edit"
+	        android:ems="10" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LLPhone"
+            android:layout_width="fill_parent"
+            android:layout_height="26dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:text="联系电话*" />
+
+            <EditText
+	        android:id="@+id/ETPhone"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:textColor="#000000"
+	        android:background="@layout/shape_edit"
+	        android:ems="10" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LLEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="26dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:text="Email" />
+
+            <EditText
+	        android:id="@+id/ETEmail"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:textColor="#000000"
+	        android:background="@layout/shape_edit"
+	        android:ems="10" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LLCompanyAddr"
+            android:layout_width="fill_parent"
+            android:layout_height="26dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:text="公司地址" />
+
+            <EditText
+	        android:id="@+id/ETCompanyAddr"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:textColor="#000000"
+	        android:background="@layout/shape_edit"
+	        android:ems="10" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LLPresidentor"
+            android:layout_width="fill_parent"
+            android:layout_height="26dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:text="公司法人*" />
+
+            <EditText
+	        android:id="@+id/ETPresidentor"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:textColor="#000000"
+	        android:background="@layout/shape_edit"
+	        android:ems="10" />
+        </LinearLayout>
+        
+       <LinearLayout
+            android:id="@+id/LLYearTurnOver"
+            android:layout_width="fill_parent"
+            android:layout_height="26dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:text="收入*" />
+
+            <EditText
+	        android:id="@+id/ETYearTurnOver"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.5"
+	        android:textColor="#000000"
+	        android:background="@layout/shape_edit"
+	        android:ems="10" />
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="万元" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BSignin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LLCompanyInfo"
+        android:layout_marginTop="34dp"
+        android:background="#dddddd"
+        android:text="注册"
+        android:textColor="#000000"
+        android:onClick="signinClick" />
+    
+</RelativeLayout>

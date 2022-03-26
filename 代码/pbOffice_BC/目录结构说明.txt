@@ -1,0 +1,27 @@
+app
+    SDK的API实现
+
+artifacts
+    /channel
+        通道配置信息
+    /src/github.com
+        合约存放路径
+    /base.yaml
+        基础镜像配置文件
+    /docker-compose.yaml
+        docker-compose工具管理容器配置
+
+app.js
+    开启区块链网络服务，加载API
+
+config.json
+    网络、用户等配置信息
+
+package.json
+    node.js服务启动及以来配置信息
+
+pbOffice.sh
+    区块链服务测试脚本
+
+runApp.sh
+    一件启动区块链网络脚本

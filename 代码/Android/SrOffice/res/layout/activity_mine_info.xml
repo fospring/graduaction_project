@@ -1,0 +1,233 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sroffice.MineInfoActivity"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mine_background" />
+    
+    <TextView
+         android:id="@+id/TVUserName"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/imageView1"
+         android:layout_marginTop="10dp"
+         android:text="用户" 
+         android:textColor="#000000"/>
+
+    <LinearLayout
+        android:id="@+id/LLButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TVUserName"
+        android:layout_marginTop="10dp"
+        android:background="#EEEEE0"
+        android:orientation="vertical">
+        
+        <Button
+        android:id="@+id/BUserInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+		android:gravity="left|center_vertical"
+		android:background="#ffffff"
+        android:text="个人信息" 
+        android:drawableRight="@drawable/pact_arrow"
+        android:textColor="#000000"
+        android:onClick="userInfoButtonClick"/>
+        
+        <Button
+        android:id="@+id/BRentInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+		android:gravity="left|center_vertical"
+		android:background="#ffffff"
+        android:text="租赁信息" 
+        android:drawableRight="@drawable/pact_arrow"
+        android:textColor="#000000"
+        android:onClick="rentInfoButtonClick"/>
+        
+        <Button
+        android:id="@+id/BCreditInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+		android:gravity="left|center_vertical"
+		android:background="#ffffff"
+        android:text="信用信息" 
+        android:drawableRight="@drawable/pact_arrow"
+        android:textColor="#000000"
+        android:onClick="creditInfoButtonClick"/>
+        
+        <Button
+        android:id="@+id/BApplyStation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+		android:gravity="left|center_vertical"
+		android:background="#ffffff"
+        android:text="发布工位" 
+        android:drawableRight="@drawable/pact_arrow"
+        android:textColor="#000000"
+        android:onClick="applyStationButtonClick"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/LLGuider"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#dddddd"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/LLRent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" 
+            android:onClick="mainButtonClick">
+
+            <ImageView
+                android:id="@+id/IVRent"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#00000000"
+                android:scaleType="fitXY"
+                android:src="@drawable/guider_rent" />
+
+            <TextView
+                android:id="@+id/TVRent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="租赁" 
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLShopping"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:onClick="shopButtonClick" >
+
+            <ImageView
+                android:id="@+id/IVShopping"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#00000000"
+                android:scaleType="fitXY"
+                android:src="@drawable/guider_shop" />
+
+            <TextView
+                android:id="@+id/TVShopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购物" 
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLForum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" 
+            android:onClick="ForumButtonClick">
+
+            <ImageView
+                android:id="@+id/IVForum"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#00000000"
+                android:scaleType="fitXY"
+                android:src="@drawable/guider_forum" />
+
+            <TextView
+                android:id="@+id/tTVForum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="论坛" 
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLElse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:onClick="elseButtonClick" >
+
+            <ImageView
+                android:id="@+id/IVElse"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#00000000"
+                android:scaleType="fitXY"
+                android:src="@drawable/guider_else" />
+
+            <TextView
+                android:id="@+id/TVElse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="其他" 
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLMine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:onClick="mineButtonClick" >
+
+            <ImageView
+                android:id="@+id/IVMine"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#00000000"
+                android:scaleType="fitXY"
+                android:src="@drawable/guilder_mine" />
+
+            <TextView
+                android:id="@+id/TVMine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的" 
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

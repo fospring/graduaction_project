@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sroffice"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:theme="@style/myTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="主页" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="登录"
+            android:theme="@style/myTheme" >
+        </activity>
+        <activity
+            android:name=".SigninActivity"
+            android:label="注册"
+            android:theme="@style/myTheme" >
+        </activity>
+        <activity
+            android:name=".Signin2Activity"
+            android:label="注册"
+            android:theme="@style/myTheme" >
+        </activity>
+        <activity
+            android:name=".PactActivity"
+            android:label="合同"
+            android:theme="@style/myTheme" >
+        </activity>
+        <activity
+            android:name=".MineInfoActivity"
+            android:label="我的"
+            android:theme="@style/myTheme" >
+        </activity>
+        <activity
+            android:name=".CreditInfoActivity"
+            android:label="信用积分"
+            android:theme="@style/myTheme" >
+        </activity>
+        <activity
+            android:name=".RentInfoActivity"
+            android:label="租赁信息"
+            android:theme="@style/myTheme" >
+        </activity>
+        <activity
+            android:name=".ShopActivity"
+            android:label="商超便利"
+            android:theme="@style/myTheme" >
+        </activity>
+        <activity
+            android:name=".StationInfoActivity"
+            android:label="工位信息"
+            android:theme="@style/myTheme" >
+        </activity>
+        <activity
+            android:name=".SigninTypeActivity"
+            android:label="注册类型"
+            android:theme="@style/myTheme" >
+"
+        </activity>
+        <activity
+            android:name=".UserInfoActivity"
+            android:label="@string/title_activity_user_info" >
+        </activity>
+        <activity
+            android:name=".RentStationActivity"
+            android:label="@string/title_activity_rent_station" >
+        </activity>
+    </application>
+
+</manifest>

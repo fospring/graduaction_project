@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SrOffice</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_signin">SigninActivity</string>
+    <string name="title_activity_signin2">Signin2Activity</string>
+    <string name="title_activity_pact">PactActivity</string>
+    <string name="title_activity_mine_info">MineInfoActivity</string>
+    <string name="title_activity_credit_info">CreditInfoActivity</string>
+    <string name="title_activity_rent_info">RentInfoActivity</string>
+    <string name="title_activity_shop">ShopActivity</string>
+    <string name="title_activity_station_info">StationInfoActivity</string>
+    <string name="title_activity_signin_type">SigninTypeActivity</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_rent_station">RentStationActivity</string>
+
+</resources>

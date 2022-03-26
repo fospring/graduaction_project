@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sroffice.PactActivity"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+		android:gravity="center"
+		android:textSize="20sp"
+		android:textColor="#000000"
+        android:text="合同信息" />
+    
+  <LinearLayout
+        android:id="@+id/LLPactInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:background="#dddddd"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:text="工位名称" />
+
+            <EditText
+		        android:id="@+id/ETStationName"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1.8"
+		        android:textColor="#000000"
+		        android:background="@layout/shape_edit"
+		        android:ems="10" />
+        </LinearLayout>
+        
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:text="工位地址" />
+
+            <EditText
+		        android:id="@+id/ETStationAddr"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1.8"
+		        android:textColor="#000000"
+		        android:background="@layout/shape_edit"
+		        android:ems="10" />
+        </LinearLayout>
+        
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:text="工位容纳人数" />
+
+            <EditText
+		        android:id="@+id/ETStationCap"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1.8"
+		        android:textColor="#000000"
+		        android:background="@layout/shape_edit"
+		        android:ems="10" />
+        </LinearLayout>
+        
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:text="工位价格每天" />
+
+            <EditText
+		        android:id="@+id/ETStationPrice"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1.8"
+		        android:textColor="#000000"
+		        android:background="@layout/shape_edit"
+		        android:ems="10" />
+        </LinearLayout>
+  
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:text="工位租赁者编号" />
+
+            <EditText
+		        android:id="@+id/ETRentNo"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1.8"
+		        android:textColor="#000000"
+		        android:background="@layout/shape_edit"
+		        android:ems="10" />
+        </LinearLayout>
+        
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:text="租赁时长" />
+
+            <EditText
+		        android:id="@+id/ETRentTime"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1.3"
+		        android:textColor="#000000"
+		        android:background="@layout/shape_edit"
+		        android:ems="10" />
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="天"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+  	<LinearLayout 
+  	    android:id="@+id/LLRentRule"
+  	    android:layout_width="fill_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_below="@id/LLPactInfo"
+  	    android:layout_marginTop="15dp"
+  	    android:orientation="vertical">
+  	    
+  	    <TextView 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:gravity="center"
+           android:background="#ffffff"
+           android:drawableRight="@drawable/pact_arrow"
+           android:text="租赁守则"
+           android:textColor="#000000"
+           android:textSize="15sp"/>
+       
+       <CheckBox
+        android:id="@+id/CBAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:text="接受租赁守则" 
+        android:textSize="12sp"/>
+  	</LinearLayout>
+
+  	<Button
+  	    android:id="@+id/BConfirm"
+  	    android:layout_width="fill_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_below="@+id/LLRentRule"
+  	    android:layout_centerHorizontal="true"
+  	    android:layout_marginTop="20dp"
+  	    android:background="@android:color/holo_blue_light"
+  	    android:textColor="#000000"
+  	    android:text="确认" />
+
+</RelativeLayout>
